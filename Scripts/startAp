@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+create_ap wlan0 wlan0 MyAccessPoint keyboard &

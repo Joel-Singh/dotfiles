@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+create_ap --stop $(create_ap --list-running | tr ' ' '\n' | grep ^[0-9])
