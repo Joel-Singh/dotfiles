@@ -30,7 +30,6 @@ alias xterm='xterm & disown'
 alias df='echo "Filesystem       Size  Used  Avai Use% Mounted on" && df --human-readable | grep mmcblk.p2' 
 alias nvimshorts='cat /home/apple/nvim/lua/user/keymaps.lua /home/apple/nvim/lua/user/lsp/handlers.lua > /tmp/nvimshorts && sed -n 811,855p  ~/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/doc/nvim-tree-lua.txt >> /tmp/nvimshorts && cat /tmp/nvimshorts | fzf --preview-window wrap'
 alias e="exit"
-alias test="npm test *.spec.js"
 # alias cat="bat"
 alias addrt="trello add-card --boardName 'Working Tasks Board' -l 'Random Thoughts'"
 # Set vim mode
