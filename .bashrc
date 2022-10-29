@@ -35,10 +35,10 @@ alias addrt="trello add-card --boardName 'Working Tasks Board' -l 'Random Though
 # Set vim mode
 set -o vi
 bind 'set show-mode-in-prompt on'
-set keyseq-timeout 25 
+set keyseq-timeout 25
 # History Settings
 HISTFILESIZE=10000
-HISTSIZE=10000 
+HISTSIZE=10000
 # Avoid duplicates
 HISTCONTROL=ignoredups:erasedups
 # When the shell exits, append to the history file instead of overwriting it
@@ -52,7 +52,7 @@ PROMPT_COMMAND="$PROMPT_COMMAND;pwd > /tmp/currentwd"
 # CTRL-T to fuzzily search for a file or directory in your home directory then insert its path at the cursor
 #
 # ALT-C to fuzzily search for a directory in your home directory then cd into it
-# 
+#
 # CTRL-R to fuzzily search your command line history then run an old command
 source /usr/share/fzf/completion.bash
 source /usr/share/fzf/key-bindings.bash
