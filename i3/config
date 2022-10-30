@@ -234,8 +234,7 @@ exec kdeconnect-cli --refresh &
 exec redshift -P -O 3000
 bindsym $mod+c exec "dunstctl close"
 bindsym $mod+Shift+c exec "dunstctl history-pop"
-exec min
-exec alacritty
+exec i3-msg 'workspace 1; exec min'
 # exec i3-msg 'workspace1; exec min' && sleep 5 && i3-msg 'workspace2; exec alacritty' && i3-msg 'workspace2; exec alacritty'
 bindsym $mod+q exec "rofi -show window"
 bindsym $mod+b exec "battery"
