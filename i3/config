@@ -239,6 +239,7 @@ exec alacritty
 # exec i3-msg 'workspace1; exec min' && sleep 5 && i3-msg 'workspace2; exec alacritty' && i3-msg 'workspace2; exec alacritty'
 bindsym $mod+q exec "rofi -show window"
 bindsym $mod+b exec "battery"
+exec --no-startup-id feh --bg-fill ~/Personal/Documents/wallpaper.jpeg
 # exec sleep 5 && systemctl restart iwd.service
 # Doesn't work for some reason
 # exec shutdownAfter 7200
