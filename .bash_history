@@ -10003,3 +10003,8 @@ ls -A
 ls -A | grep bash
 cat .bash_history
 c
+ln -Pfi ./.bash_history ~/.bash_history
+ln -Pfi ./.bash_profile ~/.bash_profile 
+ln -Pfi ./.bashrc ~/.bashrc
+ln -Pfi ./.xinitrc ~/.xinitrc
+c
