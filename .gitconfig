@@ -1,0 +1,21 @@
+[user]
+	name = Joel Singh
+	email = joelsingh788@gmail.com
+[editor]
+	core = nvim
+[core]
+	editor = nvim
+	excludesfile = /home/apple/.gitignore
+[init]
+	defaultBranch = main
+[merge]
+	tool = nvimdiff
+[diff]
+	tool = nvimdiff
+[credential]
+	helper = store
+[format]
+	pretty = oneline
+[log]
+	decorate = short
+	abbrevCommit = true
