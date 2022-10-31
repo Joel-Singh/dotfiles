@@ -1,1379 +1,3 @@
-ls
-git status
-git diff --staged 
-git checkout -h
-c
-git checkout -b
-cd ~/Personal/Programming/Git_Practice/
-git status
-git checkout -b improving_health_functions 
-git branch
-git checkout
-git status
-git diff --staged
-git restore --staged health_functions.txt 
-c
-git status
-git checkout main 
-git status
-c
-git status
-git add health_functions.txt 
-git commit -v
-git diff HEAD improving_health_functions 
-git diff improving_health_functions 
-c
-git diff improving_health_functions 
-git branch  improving_health_functions 
-git checkout improving_health_functions 
-ls
-git status 
-cat health_functions.txt 
-git merge main 
-git commit -p
-git log -p
-c
-git checkout main
-vim evil_code.txt 
-git add evil_code.txt 
-git commit -m "Add explode function"
-git checkout improving_health_functions 
-vim evil_code.txt 
-git status
-git add evil_code.txt 
-git commit -v
-git merge main
-vim evil_code.txt 
-git merge main
-git status
-git add evil_code.txt 
-git status
-git commit
-git log
-c
-git checkout main
-git merge improving_health_functions 
-c
-c
-git checkout main 
-man git branch
-git checkout improving_health_functions 
-git branch -m "second_branch"
-git checkout
-git branch
-git checkout main 
-ls
-git branch
-c
-vim evil_code.txt 
-git add evil_code.txt 
-git commit -m "Add snap() function"
-git checkout second_branch 
-vim evil_code.txt 
-git add evil_code.txt 
-git commit -m "Add naenae function"
-c
-git merge main
-git mergetool
-git config --global merge.tool nvimdiff
-git mergetool
-git add evil_code
-git  status
-git commit
-git status
-ls
-rm *evil_code*
-git status
-c
-git status
-nvim evil_code.txt 
-c
-git branch
-git checkout main
-git merge second_branch 
-c
-git branch -v
-git branch --merged
-git branch --no-merged
-c
-git branch --merged
-nvim evil_code.txt 
-git status
-git add evil_code.txt 
-git status
-git branch -b "another_branch"
-git checkout -h
-git checkout -b "AnotheranotherBranch"
-git status
-git diff --staged
-git commit -m "attack function added"
-git status
-git checkout main
-git merge AnotheranotherBranch 
-git branch --merged
-git branch -h
-c
-git branch --merged
-git branch -d AnotheranotherBranch 
-git branch -d second_branch 
-git branch
-history
-c
-git merge -h
-git commit -h
-git commit --dry-run
-nvim health_functions.txt 
-git commit --dry-run 
-git add health_functions.txt 
-git commit --dry-run 
-git status
-man git commit
-c
-git commit -v
-c
-git ls-remote
-git ls-remote origin
-git remote show
-cd ../Robotics/robot_code/
-git ls-remote
-c
-cd -
-git config --list
-c
-cd -
-git config --list
-man git
-c
-man git
-git check ignore
-git ignore
-c
-git branch -vv
-nvim diff
-man nvim
-git diff HEAD stash@{0}
-c
-git diff HEAD stash@{0}
-git difftool
-man git difftool
-git difftool -h
-git difftool help
-man git difftool 
-git difftool -t nvimdiff HEAD stash@{0}
-git config --global diff.tool nvimdiff
-c
-history
-c
-man git branch
-git branch
-git diff ...stash@{9}
-git diff
-cd ~/Personal/Programming/Robotics/robot_code/
-git diff ...stash@{9} ...stash@{8}
-git diff ...stash@{8}
-git diff ...stash@{7}
-git diff ...stash@{6}
-git diff ...stash@{5}
-c
-git diff ...stash@{5}
-git diff ...stash@{4}
-c
-git diff ...stash@{4}
-git diff ...stash@{3}
-c
-git diff ...stash@{3}
-git diff ...stash@{2}
-c
-git diff ...stash@{1}
-git diff ...stash@{0}
-c
-cat src/main/java/frc/robot/subsystems/Climber.java | vim -
-c
-date
-c
-date
-date
-git branch
-git status
-git log --oneline
-git diff HEAD...adding-tests 
-git branch -d adding-tests 
-git branch
-c
-git log --oneline
-man git branch
-git branch new_branch stash@{0}
-git branch
-git stash list
-git checkout new_branch 
-git diff HEAD master 
-git diff HEAD...master 
-c
-git diff HEAD...master 
-git diff master...HEAD
-cat src/main/java/frc/robot/commands/ShooterRevLimelightDistance.java 
-c
-git diff
-git branch
-git stash list
-git checkout master
-git branch -d new_branch 
-git branch -D new_branch 
-git branch
-c
-git stash list
-c
-git diff HEAD...stash@{0}
-cat src/main/java/frc/robot/commands/shooterRevLimelightDistance.java
-c
-git status
-c
-shutdown
-shutdown 0
-date
-man date
-date -UTC
-date -h
-date --help
-man date
-c
-date --utc
-date
-nvim ~/.bashrc
-source ~/.bashrc
-date
-c
-date
-cd ~/Personal/Programming/Robotics/robot_code/
-git reflog
-c
-git branch
-git stash list
-git status
-git log -h
-git log -g
-c
-man git reflog
-git reflog
-git reflog --decoratoin
-git reflog --decoration
-git reflog -h
-git reflog --help
-c
-histoyr
-history
-c
-cd ~/Personal/Programming/Robotics/robot_code/
-c
-git show HEAD@{0}
-git show HEAD@{0, 1, 2, 3}
-echo {1, 2, 3}
-echo {0..9}
-git show HEAD@{0,1,2,3}
-{0,1,2,3,4}
-{0\|1}
-echo {0\|1}
-man seq
-git show HEAD@{0..9}
-git show HEAD@\{{0..9}\}
-c
-git show HEAD^
-git show HEAD
-c
-git show HEAD^2
-git show HEAD~1
-git show HEAD~2
-git show HEAD~0
-git show HEAD~1
-git show HEAD~2
-c
-git log HEAD..stash@{0}
-git log HEAD..stash@{1}
-git log HEAD..stash@{2}
-git log HEAD..stash@{3}
-c
-git log HEAD..stash@{4}
-git log HEAD..stash@{5}
-git log HEAD..stash@{6}
-git log HEAD..stash@{7}
-git log HEAD..stash@{8}
-git log HEAD..stash@{9}
-git log HEAD..stash@{10}
-c
-git log stash@{10}..HEAD
-git log stash@{9}..HEAD
-c
-git diff HEAD HEAD..stash@{9}
-git diff HEAD..stash@{9}
-git diff stash@{9}..HEAD
-history | grep ..
-history | grep \.\.
-git diff HEAD...stash@{9}
-c
-git diff --left-right HEAD...stash@{9}
-git diff --left-right stash@{9}...HEAD
-c
-man git log
-git log --oneline --decorate --left-right --graph stash@{9}..HEAD
-git log --oneline --decorate --left-right --graph HEAD...stash@{9}
-git diff --oneline --decorate --left-right --graph HEAD...stash@{9}
-git diff --decorate --left-right --graph HEAD...stash@{9}
-git diff --left-right HEAD...stash@{9}
-git diff HEAD...stash@{9}
-git diff HEAD..stash@{9}
-c
-man git diff
-git diff HEAD...stash@{9}
-c
-c
-git log HEAD...stash@{9}
-c
-git log HEAD..x.stash@{9}
-git log HEAD..stash@{9}
-git log
-c
-git log HEAD...stash@{9}
-c
-git log HEAD..stash@{9}
-git log --left-right HEAD..stash@{9}
-git log --left-right HEAD...stash@{9}
-c
-c
-man git rev-lsit
-git rev list
-c
-git rev list
-git rev list foo
-c
-git diff HEAD...stash@{9}
-git diff HEAD..stash@{9}
-c
-git diff HEAD HEAD..stash@{9}
-git diff HEAD stash@{9}
-c
-git diff HEAD...stash@{9{
-git diff HEAD...stash@{9}
-git HEAD...stash@{9}
-git log HEAD...stash@{9}
-c
-git log --left-right HEAD...stash@{9}
-c
-git log origin/master..HEAD
-git status
-c
-git log HEAD..origin/master
-git log HEAD..origin/maste
-git log HEAD..origin/master
-c
-git log HEAD ^origin/master 
-c
-git log origin/master ^HEAD
-c
-git diff HEAD...stash@{9}
-git diff HEAD ^stash@{9}
-c
-git diff ^HEAD stash@{9}
-c
-git diff HEAD...stash@{9}
-c
-git diff HEAD...stash@{8}
-git diff HEAD...stash@{7}
-git diff HEAD...stash@{6}
-git diff HEAD...stash@{5}
-git diff HEAD...stash@{4}
-git diff HEAD...stash@{3}
-git diff HEAD...stash@{2}
-c
-git diff HEAD...stash@{2}
-c
-git diff HEAD...stash@{2}
-git diff HEAD...stash@{1}
-git diff HEAD...stash@{0}
-c
-git diff HEAD...stash@{0}
-c
-git clean -d -n
-man git clean
-git clean -n
-git clean -d -n
-c
-c
-man git diff
-git diff HEAD...stash@{9}
-git diff --merge-base HEAD stash@{9}
-git diff --merge-base stash@{9} HEAD
-c
-git diff --merge-base HEAD stash@{9}
-git diff HEAD...stash@{9}
-c
-c
-git diff help
-git diff --help
-git merge base
-git merge-base
-man git merge-base
-c
-man git diff
-man git merge-base
-git merge-base HEAD stash@{9}
-git diff (git merge-base HEAD stash@{9})
-history
-git diff $(git clean -n)
-echo git diff $(git clean -n)
-c
-git status
-git reflog
-git reflog --decorate:full
-man git reflog
-git log -g
-c
-man git rebase
-cd ~/Personal/Programming/
-mv Git_Practice/ General_Git_Practice
-cd General_Git_Practice/
-git status
-cd -
-ls
-mkdir Rebase_Git_Practice
-mkdir Git_Practice
-c
-ls
-mv Rebase_Git_Practice/ ./Git_Practice/
-ls
-cd Git_Practice/
-ls
-cd 0
-cd -
-mv General_Git_Practice/ Git_Practice/
-ls
-cd Git_Practice/
-ls
-cd Rebase_Git_Practice/
-git init
-git commit --allow-empty -m "Initial commit"
-git log
-c
-echo "Hello Wrold!" > greeting.txt
-git add greeting.txt 
-git commit -m "Add greeting.txt"
-git log
-c
-echo "Hello World!" > greeting.txt
-git add greeting.txt 
-git commit --amend
-git log
-git log -p
-c
-man rm
-rm -rf ./*
-ls
-git init
-git log
-ls -A
-rm -r .git
-rm -rf .git
-ls
-ls -A
-git init
-git log
-echo "Hello!" > greeting.txt
-c
-git add greeting.txt
-git status
-git rm --cached greeting.txt 
-git status
-git commit -am "Add greeting.txt"
-git commit -a -m "Add greeting.txt"
-c
-git add greeting.txt 
-git commit -m "Add greeting.txt"
-git log
-c
-echo "Goodbye worldc"  > farewell.txt
-git add farewell.txt 
-git commit -m "Add farewell.txt"
-echo "Hello world!" > greeting.txt
-git commit -am "fixup greeting.txt"
-c
-git rebase -i HEAD~3
-git log
-git log --oneline
-git rebase -i HEAD~3
-git rebase -i HEA~3
-git rebase -i HEAD~2
-git status
-git log
-git commit --allow-empty -m "Extra commit"
-git rebase -i HEA~3
-git rebase -i HEAD~3
-git log --oneline
-git rebase -i HEAD~2
-git rebase -i HEAD~1
-git log
-git rebase -i HEAD
-c
-git log
-git --amend
-git -rf ./.git
-rm -rf ./.git
-git log
-c
-git init
-git log
-git commit --allow-empty -m "Initial commit"
-echo "Hello!" > greeting.txxt
-echo "Hello!" > greeting.txt
-git aadd greeting.tx
-rm farewell.txt 
-rm greeting.txt
-rm greeting.txxt 
-c
-echo "Hello!" > greeting.txt
-git add greeting.txt 
-git reflog
-git commit -m  "Add greeting.txt"
-git log
-echo "Goodbye world!" > farewell.txt
-git add farewell.txt 
-git commit -m "Add farewell.txt"
-git log
-echo "Hello world!" > greeting.txt
-git add greeting.txt 
-git commit -m "fixup greeting.txt"
-git log --oneline 
-cd Rebase_Git_Practice/
-cd ~/Personal/Programming/Git_Practice/Rebase_Git_Practice/
-git log
-c
-git rebase -i HEAD~3
-git log
-man git commit
-git checkout -b squash
-for c in H e l l o , ' ' w o r l d; do     echo "$c" >>squash.txt;     git add squash.txt;     git commit -m"Add '$c' to squash.txt"; done
-c
-git log
-git log --oneline 
-git branch
-c
-git diff origin/master
-git diff main
-git diff main HEAD
-git diff HEAD main
-c
-git diff main HEAAD
-git diff main HEAD
-c
-git rebase -i master
-git rebase -i main
-git log
-c
-git log HEAD main^
-c
-cd ~/Personal/Programming/Git_Practice/Rebase_Git_Practice/
-c
-git log --oneline HEAD ^main
-git log --oneline HEAD main
-git log --oneline main
-git log --oneline HEAAD main
-git log --oneline HEAD main
-git log --oneline HEAD
-git log --oneline HEAD ^main
-git log --oneline HEAD main^
-git log --oneline HEAD ^main
-c
-git log --oneline ^main HEAD
-c
-git log --oneline HEAD ^main
-git rebase -i HEAD ^main
-git rebase -i main
-c
-git log
-c
-git log
-c
-git log --oneline
-git checkout main
-git merge squash 
-git log
-c
-git log --graph
-c
-man git log
-c
-git log
-git log -p --onelien
-git log -p --oneline
-c
-git log
-c
-pacman -Syu
-pacman -Q gd
-pacman -Q GD
-pacman -Q gD
-pacman -Q noto
-pacman -Q noto-fonts 
-pacman -Qs noto
-pacman -Qs gd
-pacman -Qs GD
-pacman -Qs gD
-c
-sudo pacman -Syu
-c
-ncdu
-cd /
-sudo ncdu
-c
-df
-c
-ncdu
-sudo ncdu
-c
-shutdown
-shutdown 0
-reboot
-xrandr
-c
-echo $TERM
-nvim ~/i3/config 
-xrandr
-xrandr --output HDMMI-1 --left-of eDP-1
-xrandr --output HDMI-1 --left-of eDP-1
-c
-c
-cd ~/Personal/Programming/Git_Practice/Rebase_Git_Practice/
-man history
-cd ~/Personal/Programming/Git_Practice/Rebase_Git_Practice/
-c
-c
-git log
-c
-git branch 
-git diff squash
-git log squash ^main
-c
-branch
-git branch
-git branch -d squash 
-c
-git reflog
-c
-git add main.c
-touch main.c
-git add main.c 
-nvim main.c 
-git diff
-git diff HEAD HEAD
-git diff HEAD main.c
-git diff main.c HEAD
-c
-git diff HEAD main.c
-git diff HEAD main.ca
-git diff HEAD main.
-git diff HEAD main.c
-c
-git status
-c
-git status -s
-git statsu
-git status -s
-git status
-git add -a
-c
-git add .
-git status
-git commit -m "Add C program skeleton"
-nvim main.c 
-git status
-man git commit
-git commit -a -m "Flesh out C program"
-c
-git log
-git log HEAD~2
-c
-git log HEAD~2
-git log HEAD~1
-c
-git log HEAD
-c
-git log HEAD HEAD~2
-c
-git log 2
-man git log
-git log 1-2
-git log 2
-git log HEAD~2
-git log HEAD
-c
-git log HEAD~5
-git log HEAD~4
-git log HEAD~3
-c
-git rebase -i HEAD~2
-git commit --amend
-git log
-c
-git rebase -i HEAD~2
-git rebase --abort
-git rebase -i HEAD~2
-git reset HEAD^
-git commit -p
-c
-git commit -a -m "Prompt user for their name"
-git rebase --continue
-git log
-c
-git log
-c
-rm -rf .git
-ls
-rm *
-c
-git init
-echo "Goodbye now!" > farewell.txt
-git add farewell.txt 
-git commit -m "Add farewell.txt" 
-c
-echo "Hello there!" > greeting.txt
-git add greeting.txt
-git commit -m "Add greeting.txt"
-echo "How're you doing?" > inquiry.txt
-git add inquiry.txt
-git commit -m "Add inquiry.txt"
-git log
-c
-git log --oneline
-git rebase -i HEAD ~3
-git rebase -i HEAD~3
-git log --oneline
-git commit --allow-empty -m "Initial commit"
-git rebase -i HEAD~3
-git log
-git rebase -i HEAD~4
-git rebase -i 75066
-git rebase -i 75066^
-git rebase -i ^75066
-c
-git log --oneline
-git rebase -i HEAD~4
-git show HEAD
-c
-git show --oneline HEAD
-man git show
-git show --oneline HEAD~
-git show --oneline HEAD~1
-git show --oneline HEAD~2
-git show --oneline HEAD~3
-git show --oneline HEAD~4
-git show --oneline HEAD~3
-git rebase -i HEAD~3
-cd ~/Personal/Programming/Git_Practice/Rebase_Git_Practice/
-git log --oneline
-git rebase -i HEAD~3
-git rebase -i HEAD~4
-git rebase -i --root
-git log --oneline
-c
-c
-man git checkout
-c
-date
-htop
-bat
-source ~/.bashrc
-nvim ~/.bashrc
-battery 
-date
-shutdown 0
-cd ~/Personal/Programming/Robotics/robot_code/
-git status
-git fetch
-git status
-gitk
-sudo pacman -Syu
-yay -Syu
-c
-sudo pacman -S gitk
-sudo pacman -Ss git
-c
-sudo pacman -Ss --color=auto git
-nvim ~/.bashrc
-source ~/.bashrc
-c
-sudo pacman -Ss --color=auto git
-sudo pacman -Ss --color=auto gitk
-c
-pacman -S git
-sudo pacman -S git
-sudo pacman -S tk
-c
-c
-gitk
-gitk --all
-history | grep stash
-history | grep \\{
-echo \{
-echo \\{
-echo {0..9
-echo {0..9}
-git stash list
-echo stash\{{0..9}}
-echo stash
-c
-history --refresh
-man history
-history
-c
-history; c
-echo stash\{{0..9}}
-echo stash\{{0..9}}
-gitk --all stash\{{0..9}}
-gitk --all stash@\{{0..9}}
-c
-git status
-git stash list
-man git stash
-readfile -f ./
-readlink -f ./
-alacritty $(readlink -f ./)
-man alacritty
-c
-source ~/.bashrc
-readlink -f /tmp
-readlink -f /tmp/tesasdffasdf
-ls /tmp
-ls /tm
-c
-shellcheck
-pacman -Ss shellCheck
-c
-nvim ~/.bashrc
-bash -n  ~/.bashrc
-man bash 
-c
-pacman -Ss shellCheck
-sudo pacman -S shellcheck
-c
-source ~/.bashrc
-.
-nvim ~/.bashrc
-source ~/.bashrc
-a
-echo test
-pwd > /tmp/currentwd
-cat /tmp/currentwd 
-pwd > /tmp/currentwd
-cat /tmp/currentwd 
-c
-bash -n ~/.bashrc
-nvim ~/.bashrc
-test
-c
-cd ~/Personal/
-cat /tmp/currentwd 
-c
-man alacritty
-ls /tmp/
-nvim ~/i3/config 
-cd Downloads/
-cat /tmp/*wd
-ls
-cd ../
-cat /tmp/currentwd 
-c
-#Right terminal
-history
-cd ~
-c
-cd ~/Personal/Programming/Robotics/robot_code/
-git status
-man git diff
-git diff --merge-base stash@{9}
-c
-git diff --merge-base stash@{8}
-c
-git diff --merge-base stash@{7}
-c
-git diff HEAD...stash@{9}
-man git diff
-c
-git stash drop stash@{9}
-ls
-git diff HEAD...stash@{8}
-git stash drop stash@{8}
-git diff HEAD...stash@{7}
-git stash drop stash@{7}
-git diff HEAD...stash@{6}
-c
-git diff HEAD...stash@{6}
-git stash drop stash@{6}
-git stash list
-git diff HEAD...stash@{5}
-c
-git diff HEAD...stash@{5}
-git stash drop stash@{5}
-c
-git stash list
-git diff HEAD...stash@{4}
-c
-git stash list
-git stash drop stash@{4}
-git status
-git pop stash@{0}
-git stash pop stash@{0}
-git status
-git diff
-c
-man git checkout
-git checkout -b came-back-to-these-changes
-git status
-git commit
-git commit -a
-git status
-branch
-git branch
-c
-git checkout master 
-git status
-git stash list
-cat ./src/main/java/frc/robot/RobotContainer.java | nvim -
-c
-git diff HEAD...stash@{2}
-git stash drop stash@{2}
-c
-git stash list
-git diff HEAD...stash@{1}
-git stash drop 2
-git stash drop 1
-c
-git status -s
-touch test
-ls
-git status
-git add test 
-ls
-git status
-git checkout came-back-to-these-changes 
-git status
-git checkout master 
-git status
-ls ./src/main/java/frc/robot/commands/ShooterRevLimelightDistance.java
-v
-c
-git status
-git restored --staged test
-git restore --staged test
-git status
-rm test
-ls
-c
-git status
-git stash list
-git diff HEAD...stash@{0}
-git stash drop 0
-c
-git stash list
-c
-man git switch
-c
-git checkout came-back-to-these-changes 
-git status
-nvimdiff
-c
-man git config
-git config --list
-nvimdiff
-man nvimdiff
-man nvim
-c
-man nvim
-ls ./src/main/java/frc/robot/subsystems/
-git branch
-git status
-sudo pacman -S ranger
-c
-ranger ./
-c
-nvim ~/.bashrc
-c
-source ~/.bashrc
-ls robot
-echo robot
-ls robot/test
-nvim ~/.bashrc
-echo robot
-ls robot/subsystems
-echo robot
-echo df
-man bash
-ls
-man link
-man symlink
-apropos link
-c
-man link
-man ln
-ln -s ./src/main/java/frc/robot/ robot
-ls
-git status
-man git config
-ls
-nvim ~/.gitignore
-git status
-c
-git status
-nvim ~/.gitignore 
-cd ~/temp_gitrepo 
-man cd
-mkdir ~/temp_gitrepo
-cd ~/temp_gitrepo 
-git init
-touch robot
-git status
-git config --list 
-git config --list --show-origin 
-nvim ~/.gitignore
-git status
-ls
-echo 'robot' >> .gitignore
-ls
-ls -A
-git status
-git status
-echo 'robot' >> .gitignore
-git status
-nvim .gitignore 
-ls
-ls
-git status
-c
-git status
-cd ./
-ls .git
-rm -f .git
-rm -rf .git
-ls
-cd ../
-rm -r temp_gitrepo/
-c
-nvim ~/.gitignore
-rm ./gitig
-rm ~/.gitignore 
-c
-touch ~/.gitignore
-nvim ~/.gitignore
-echo $HOME/.gitignore
-git config --global core.excludesfile $HOME/.gitignore
-git status
-git config --list --show-origin 
-nvim ~/.gitignore
-git status
-ls robot/commands/
-touch robot/commands/test
-git status
-nvim ~/.gitignore
-git status
-nvim ~/.gitignore
-git status
-c
-ranger
-git status
-git ^i#config --global core.excludesfile $HOME/.gitignore
-#git config --global core.excludesfile $HOME/.gitignore
-git config --list --show-origin 
-c
-rm robot/commands/test
-git branch
-git status
-ls robot/commands/*ime*
-git status
-git log
-git diff HEAD
-sudo pacman -S w3m
-w3m
-man w3m
-w3m google.com
-c
-nvim robot/RobotContainer.java 
-c
-man w3m
-man find
-cd ~
-find w3m
-find -r w3m
-man find
-find ./ w3m
-c
-ls
-man find
-c
-w3m
-c
-#
-c
-w3m
-c
-w3m google.com
-c
-ranger /usr
-find /usr w3m
-cd /usr
-ranger
-find *w3m*
-find ./ *w3m*
-c
-man w3m
-pacman -Q w3m
-man pacman
-pacman -Ql w3m
-ranger /usr/share/doc
-c
-#
-cd /usr/share/doc/
-ls
-ls w3m
-min w3m
-cd w3m
-ls
-w3m
-c
-cat README | nvim -
-ls
-min MANUAL.html 
-w3m google.com
-nvim ~/.bashrc
-source ~/.bashrc
-nvim ~/.inputrc
-ls
-fzf
-fzf /
-cd ../
-c
-fzf
-c
-cd ~
-ls
-fzf | cd
-fzf
-fzf | nvim
-c
-asdfasdfc
-htop
-fzf || nvim
-nvim $(fzf)
-ls
-cd Personal
-ls
-fzf
-c
-man pacman
-pacman -Ss .
-pacman -Ss . | fzf
-pacman -Ss minecraft | fzf
-pacman -Ss mine
-pacman -Ss mine | fzf
-pacman -Ss mine | grep ^?
-pacman -Ss mine | grep ^
-pacman -Ss mine | grep ^[a-z]
-pacman -Ss mine | grep ^[a-zA-Z]
-pacman -Ss | grep ^[a-zA-Z]
-pacman -Ss | grep [^\ ]
-pacman -Ss | grep ^[a-zA-Z]
-pacman -Q min
-sudo pacman -S min
-pacman -Ss | grep ^[a-zA-Z] | fzf
-c
-man fzf
-c
-cd -
-cd $(fzf)
-sudo pacman -S fd
-c
-nvim ~/.bashrc
-source ~/.bashrc
-c
-$FZF_DEFAULT_COMMAND 
-c
-/usr/share/fzf/shell/key-bindings.bash
-sudo /usr/share/fzf/shell/key-bindings.bash
-cd /usr/share/fzf/
-ls
-completion.bash
-sudo complete 
-ls
-ls -A
-complete
-c
-man complete
-complete
-c
-ls
-sudo completion.bash
-bash completion.bash
-nvim completion.bash
-nvim ~/.bashrc
-source ~/.bashrc
-c
-ls
-readlink completion.bash
-readlink -f commpletion.bash
-man readlink
-nvim ~/.bashrc
-c
-nvim ~/.bashrc
-source ~/.bashrc
-nvim ~/.bashrc
-history
-c
-cd -- /home/apple/Personal/Programming/Robotics/robot_code/
-cd -- /home/apple/Desktop/
-cd -- /home/apple/nvim/
-ls
-min /home/apple/wpilib/2022/documentation/cpp/todo.html 
-c
-cd -- /home/apple/Personal/Programming/Robotics/robot_code/
-c
-cd -- /home/apple/Personal/
-c
-nvim ~/i3/config 
-nvim ~/.bashrc
-reboot
-nvim ~/.bashrc
-cd -- /home/apple/Desktop/
-c
-fzf /
-man fzf
-cd /
-cd /usr
-fzf
-cd share/
-fzf
-alias
-echo fzf
-fzff
-fzf
-echo .
-find . | fzf
-ls
-cd doc/
-ls
-find . | fzf
-c
-cd -- /home/apple/i3/
-cd ~
-c
-c
-nvim /home/apple/i3/config 
-c
-nvim ~/.bashrc
-c
-nvim /home/apple/i3/config 
-c
-find /dev/. | fzf
-ls /dev/.
-c
-nvim
-nvim 
-nvim ~/alacritty.yml 
-nvim
-c
-man nvim
-nvim /home/apple/nvim/init.vim 
-c
-nvim
-cat ~/vimtestfile 
-rm ~/vimtestfile 
-nvim
-c
-man git cherrypick
-find /. | fzf
-c
-man git cherry-pick
-nvim
-c
-fzf
-cd -- /home/apple/Personal/Programming/Robotics/robot_code/
-c
-ls
-file robot
-file .
-file *
-git log
-git stash list
-c
-git branch
-git diff master...came-back-to-these-changes 
-c
-git diff came-back-to-these-changes...master 
-c
-man nvim
-nvim --version
-c
-nbim
-nvim /home/apple/nvim/init.vim 
-c
-nvim
-c
-nvimm
-df
-nvim /home/apple/nvim/init.vim 
-nvim ~/.bashrc
-source ~/.bashrc
-source ~/.bashrc
-df
-nvim ~/.bashrc
-c
-whatis yay
-yay -Ss packer | fzf
-yay -Ss packer
-yay -Ss nvim-packer.git
-yay -Ss nvim-packer-git
-yay -Qs nvim-packer-git
-yay -Ss packer | fzf
-c
-yay -S nvim-packer-git
-c
-nvim /home/apple/nvim/init.vim 
-ls ~/.config/
-nvim ~/.bashrc
-nvim /home/apple/nvim/init.vim 
-cd ~
-mkdir ./test
-rm ./test
-rm -r ./test
-c
-mkdir ~/.config/nvim
-mkdir ~/.config/nvim/lua
-nvim ~/.config/nvim/lua/plugins.lua
-nvim /home/apple/nvim/init.vim 
-nvim
-nvim /home/apple/nvim/init.vim 
-nvim
-nvim ~/.config/nvim/lua/plugins.lua
-nvim /home/apple/nvim/init.vim 
-nvim /home/apple/i3/config 
-nvim
-exit
-nvim
-c
-nvim
-#nvim ~/.config/nvim/lua/plugins.lua
-mv ~/.config/nvim/lua/plugins.lua ~/nvim/
-ls ~/nvim/
-nvim
-c
-mv ~/nvim/plugins.lua ~/.config/nvim/lua/  
-ls
-ls ~/.config/nivm/lua/
-ls ~/.config/nvim/lua
-nvim /home/apple/nvim/init.vim 
-nvim
-man yay
-yay -Rs nvim-packer-git
-x
-c
-nvim /home/apple/nvim/init.vim 
-nvim ~/.config/nvim/lua/plugins.lua
-c
 nvim
 c
 git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
@@ -10056,3 +8680,1326 @@ ln -P ~/i3/config ./
 ls
 ln -P ~/.bash_history ./
 ln -P ~/.bash_profile ./
+cd /home/apple/nvim/ 
+ls -A
+lazygit
+gh repo create 
+c
+lazygit
+git remote add joel-singh https://github.com/Joel-Singh/nvim.git
+lazygit
+git push -u joel-singh master
+ls
+nvim README.md 
+lazygit
+c
+ls
+ls -A
+nvim ~/.xinitrc
+ln -P ~/.xinitrc ./
+ls -A
+nvim ~/.config/rofi/config
+# nvim ~/.config/rofi/config
+mkdir i3
+mv config i3/config
+mkdir rofi
+ln -P ~/.config/rofi/config ./
+mv config rofi/config
+c
+nvim ~/.gitignore 
+ls -A
+lazygit
+nvim ~/alacritty.yml 
+ln -P ~/alacritty.yml ./
+c
+ls -A ~
+cat ~/.bash-preexec.sh 
+nvim ./bashrc
+nvim ~/.bashrc
+sudo ncdu /
+c
+cd ~/Personal/
+ls
+cd Configurations/
+ls
+cat init.lua 
+cd ../
+ls
+sudo mount /dev/sda /mnt/silver/
+dmesg
+sudo dmesg
+sudo mount /dev/sda /mnt/silver/
+c
+sudo mount /dev/sda /mnt/silver/
+dmesg
+sudo dmesg
+sudo mount /dev/sda /mnt/silver/
+sudo dmesg
+sudo mount /dev/sda /mnt/silver/
+lsblk
+sudo mount /dev/sdb /mnt/silver/
+sudo mkfs.ext4 /dev/sdb
+sudo mount /dev/sdb /mnt/silver/
+sudo cp -rT ./ /mnt/silver/
+cd /mnt/silver
+ls
+rm -rf Programming/ Scripts/
+ls Programming/ Scripts/
+cd /home/apple/dotfiles/ 
+c
+ls
+ls -A
+man cp
+sudo cp -rT ~/Personal/Scripts/ ./Scripts/
+cd ./Scripts/
+ls
+cd ../
+ls ~/Personal/Scripts
+mkdir ~/temporary
+cd ~/temporary/
+ls
+ls ~/Personal
+ncdu ~/Personal
+sudo mkfs.ext4 /dev/sdc
+sudo mount /dev/sdc /mnt/silver/
+c
+sudo cp -rT ~/Personal/Bookmarks.txt /mnt/silver/
+ls /mnt/silver/
+c
+e
+sudo cp -rT ~/Personal/Configurations/ /mnt/silver/
+ls /mnt/silver/
+sudo cp -rT ~/Personal/Documents/ /mnt/silver
+ls /mnt/silver
+rm /mnt/silver/init.lua 
+sudo rm /mnt/silver/init.lua 
+c
+sudo eject /dev/sdc 
+lsblk
+sudo mount /dev/sdc /mnt/silver/
+sudo mkfs.ext4 /dev/sdc
+ls
+df
+yay -Scc
+df
+c
+pwd
+cd /home/apple/dotfiles/ 
+c
+lazygit
+c
+cat ~/temporary/archlinux-2022.10.01-x86_64.iso > /dev/sdc 
+sudo cat ~/temporary/archlinux-2022.10.01-x86_64.iso > /dev/sdc 
+lsblk
+sudo cat ~/temporary/archlinux-2022.10.01-x86_64.iso > /dev/sdc 
+sudo mount /dev/sdc /mnt/silver/
+sudo cat ~/temporary/archlinux-2022.10.01-x86_64.iso > /dev/sdc 
+c
+ls
+c
+e
+yay -Syy && yay -Syu
+c
+df
+c
+e
+yay -S iwgtk
+c
+df
+c
+e
+df
+e
+df
+c
+e
+man awk
+e
+yay -Syy && yay -Syu
+df
+c
+pacman -Syy && pacman -Syu
+sudo pacman -Syy && pacman -Syu
+sudo pacman -Syu
+c
+e
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+c
+npx webpack
+c
+npx webpack
+arandr
+nvim dist/style.css 
+e
+lazygit
+e
+npx webpack --watch
+ping google.com
+w3m
+ping 8.8.8.8
+w3m google.com
+c
+w3m google.com
+history | grep wlan0
+history | grep phys0
+history | grep rf
+man rf
+ping discord.com
+w3m discord.com
+c
+e
+sudo systemctl restart iwd.service
+c
+e
+w3m discord.com
+w3m google.co
+w3m googsadafssse.awerio
+history | neovim
+history | nvim
+history
+history | nvim
+e
+man iwd
+man iwd.debug
+iwd.debug
+iwctl
+rfkill list
+dmesg -w
+dhcpcd
+man dhcpcd
+c
+e
+getent hosts google.com
+sudo dmesg -w
+sudo nvim /etc/systemd/resolved.confg
+sudo nvim /etc/systemd/resolved.conf
+c
+e
+sudo systemctl restart systemd-resolved.service
+c
+e
+journalctl -f
+history
+sudo nvim /etc/systemd/resolved.conf
+e
+sudo systemctl restart iwd.service && exit
+e
+sudo nvim /etc/resolv.conf
+e
+dhcpcd -d --waitip=4
+sudo dhcpcd -d --waitip=4
+c
+e
+journalctl -f
+sudo dhcpcd -d --waitip=4
+nvim
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+c
+eset
+reset
+git blame -L 17 dist/index.html
+git blame -L 17-17 dist/index.html
+man git blame
+git blame -L 17,17 dist/index.html
+e
+npx webpack --watch > dev/null & disown
+ps aux | grep webpack
+npx webpack --watch > /dev/null & disown
+c
+e
+nvim
+ps aux | grep webpack
+kill 3782
+ps aux | grep webpack
+kill 3782
+ps aux | grep webpack
+c
+e
+lazygit
+nvim
+kde --ring
+kde --refresh
+kde --ring
+sudo systemctl restart iwd.service && exit
+kde --ring
+# nvim /home/apple/i3/config 
+nvim /home/apple/i3/config 
+c
+nvim ~/.xinitrc
+e
+whatis iw
+whatis iwd
+c
+sudo pacman -S networkmanager
+c
+systemctl --type=service
+systemctl stop iwd.service
+systemctl --type=service
+c
+nmtui
+systemctl disable iwd.service
+systemctl enable --now NetworkManager
+systemctl enable --now NetworkManageradsfaesfsdfasdf
+c
+nmtui
+c
+e
+nmcli device wifi list
+nmcli help
+c
+nmcli device wifi list
+nmtui
+c
+xrandr --output HDMI-1 --left-of eDP-1
+c
+arandr
+clear
+ps aux | grep xserver
+ps aux
+ps aux | grep xserver
+kill 440
+neofetch
+man killall
+c
+e
+ps aux | grep min
+cmatrix | lolcat
+e
+e
+redshift -P -O 3000 & exit
+which sys/class/backlight
+which /sys/class/backlight/
+which /sys/class/backlight/intel_backlight/
+sudo pacman -S brightnessctl
+brightnessctl 
+brightnessctl --help
+brightnessctl 0%
+brightnessctl -l
+brightnessctl -h
+brightnessctl m
+brightnessctl s 0
+brightnessctl s 600
+brightnessctl s 6000
+brightnessctl s 60000
+brightnessctl s 3000
+brightnessctl s 1500
+brightnessctl s 1000
+brightnessctl s 500
+brightnessctl s 200
+brightnessctl s 0
+brightnessctl s 1
+brightnessctl s 9000000
+c
+brightnessctl -h
+brightnessctl g
+brightnessctl s 3000
+brightnessctl s 50%
+c
+brightnessctl s 100%
+brightnessctl -d="*"
+brightnessctl -d *
+brightnessctl -device="*"
+brightnessctl --device="*"
+brightnessctl -l
+brightnessctl -device="input3*" 100%
+brightnessctl -d input3* 100%
+brightnessctl -d input3* s 100%
+brightnessctl -d input3* g
+brightnessctl -d * g
+brightnessctl --device="*" g
+brightnessctl -l
+brightnessctl s 50%
+brightnessctl s 25%
+brightnessctl s 50%
+brightnessctl s 100%
+xrandr --output eDP-1 --brightness 1
+xrandr --output eDP-1 --brightness 0.5
+xrandr --output eDP-1 --brightness 1
+xrandr --output eDP-1 --brightness 2
+xrandr --output eDP-1 --brightness 3
+xrandr --output eDP-1 --brightness 10
+xrandr --output eDP-1 --brightness 0
+xrandr --output eDP-1 --brightness 1
+xrandr --output eDP-1 --brightness 100
+xrandr --output eDP-1 --brightness 0
+xrandr --output eDP-1 --brightness 1
+xrandr --output eDP-1 --brightness 100000
+xrandr --output eDP-1 --brightness 0
+xrandr --output eDP-1 --brightness 1
+brightnessctl s 25%
+brightnessctl s 90%
+redshift -P -O 3000
+c
+xrandr --output HDMI-1 --brightness 0
+xrandr --output HDMI-1 --brightness 1
+xrandr --output HDMI-1 --brightness 0.5
+xrandr --output HDMI-1 --brightness 100000
+xrandr --output HDMI-1 --brightness 0.5
+xrandr --output HDMI-1 --brightness 1
+xrandr --output HDMI-1 --brightness 2
+xrandr --output HDMI-1 --brightness 3
+xrandr --output HDMI-1 --brightness 4
+xrandr --output HDMI-1 --brightness 5
+xrandr --output HDMI-1 --brightness 6
+xrandr --output HDMI-1 --brightness 7
+xrandr --output HDMI-1 --brightness 1
+redshift -P -O 3000 & exit
+e
+startx
+neofetch
+c
+e
+xrandr --output HDMI-1 --brightness 1
+xrandr --output HDMI-1 --brightness 2
+brightnessctl s 100%
+brightnessctl s 200%
+c
+nvim /home/apple/i3/config 
+c
+ps aux | grep shutdownAfter
+c
+NetworkManager --help
+history | nvim
+nmtui
+c
+journalctl -f
+sudo nvim /etc/systemd/resolved.conf
+c
+journalctl -f
+nmtui
+nvim ~/temp
+nvim ~/wifijourncalctl
+e
+c
+e
+ps aux | grep x
+killall startx
+ps aux | grep startx
+kill 426
+ps aux | grep startx
+ps aux | grep x
+killall xserver
+killall startx
+c
+e
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+c
+npx webpack --watch > /dev/null & disown
+c
+e
+killall webpack
+c
+npx webpack --watch
+npx webpack 
+npx webpack --watch
+c
+ls
+cd src/
+ls
+history | grep tui
+nmtui
+c
+e
+npx webpack 
+cd ..
+npx webpack 
+lazygit
+nvim dist/index.html 
+ls
+cd src/
+ls
+c
+touch eventListeners.js
+c
+touch globalVariables.js
+ls
+rm globalVariables.js 
+touch globalVariables.js
+rm globalVariables.js 
+npx webpack 
+eset
+reset
+man git blame
+git blame dist/index.html | bat
+man git blame
+git blame --ignore-rev dist/index.html | bat
+man git blame
+git blame --ignore-revs-file dist/index.html | bat
+git blame main:dist/index.html | bat
+eset
+reset
+git log dist/index.html
+man git log
+alias
+git config list
+git config --list
+c
+git log dist/index.html
+man git log
+man git log --full-diff
+git log --full-diff
+c
+git log --full-diff dist/index.html
+git log --raw dist/index.html
+git log dist/index.html
+git show ec1f85d
+git show ec1f85d dist/index.html
+git show b6968e0 dist/index.html
+c
+git log -L15,15 dist/index.html
+git log -L15 dist/index.html
+git log -L15,15:dist/index.html
+c
+e
+e
+c
+e
+lazygit
+e
+nvim src/*.js dist/index.html dist/style.css 
+e
+npx webpack --watch
+e
+nvim /home/apple/nvim/init.lua 
+e
+neofeth
+neofetch
+xrandr -q
+neofetch
+nvim ~/.config/dunst/dunstrc 
+e
+neofetch
+c
+e
+sudo dmidecode -s system-versoin
+sudo dmidecode -s system-version
+sudo pacman -S dmidecode
+man dmiedocde
+dmiedocde --help
+dmiedocde
+dmidecode 
+sudo dmidecode 
+sudo dmidecode -s system-version
+man dmidecode
+dmidecode
+sudo dmidecode
+df
+c
+e
+sudo dmidecode | nvim
+e
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+c
+ls
+c
+npx webpack --watch
+ls ~/Desktop/
+rm ~/Desktop/*.png
+c
+e
+lazygit
+git log src/index.js
+git log -L15,15:dist/index.html
+git log -L1:dist/index.html
+git log -L1,9999:dist/index.html
+git log -L15,15:dist/index.html
+git log -L1,20:dist/index.html
+git log -L1,20:dist/index.html | bat
+c
+e
+git log src/index.js --patch
+nvim dist/index.html dist/style.css src/*
+redshift -P -O 3000 & exit
+c
+e
+qalc
+c
+lazygit
+e
+git log --patch src/index.js
+c
+e
+nvim /home/apple/nvim/init.lua 
+e
+qalc
+c
+e
+ps aux | grep firefox
+c
+e
+c
+nvim /home/apple/nvim/init.lua 
+nvim src/index.js 
+nvim /home/apple/nvim/init.lua 
+e
+c
+nvim /home/apple/nvim/init.lua 
+e
+htop
+exit
+cmatrix | lolcat
+reset
+man cmatrix
+cmatrix -x
+cmatrix -l
+c
+sudo cmatrix -l
+c
+cmatrix -o
+cmatrix 
+cmatrix -a
+cmatrix -o
+cmatrix -o | lolcat
+reset
+cmatrix -o -m
+c
+man cmatrix -x
+e
+cmatrix
+cmatrix | lolcat
+e
+redshift -P -O 3000
+redshift -P -O 4000
+redshift -P -O 2000
+redshift -P -O 3000
+c
+cal 2022
+cal 2022 10
+cal 10 2022
+cal 10-11 2022
+cal 10 2022
+cal 10 2022
+c
+neofetch
+c
+e
+neofetch
+ce
+c;e
+c || e
+c && e
+c;; e
+c
+c; e
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+c
+e
+man git stash
+c
+e
+npx webpack --watch
+npx webpack
+nvim
+c
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+c
+ls
+c
+nvim /home/apple/i3/config 
+e
+ls
+ls -A
+cat .view
+c
+e
+nvim /home/apple/nvim/init.lua 
+e
+nvim
+man nvim
+nvim -S .session
+nvim ~/.gitignore
+e
+git bisect
+git bisect start
+ls -A
+rm '.session!' 
+c
+e
+nvim /home/apple/nvim/init.lua 
+e
+nvim -S .session
+c
+e
+npx webpack --watch
+e
+ls
+cd ../
+cd /home/apple/Personal/Documents/Key-Club/ 
+c
+e
+qalc
+cd ~
+c
+3250 - 1000 300 - 500 + 80
+qalc 3250 - 1000 300 - 500 + 80
+qalc 3250 - 1000 - 300 - 500 + 80
+e
+qalc
+qalc
+brightnessctl s 100%
+clear
+nvim
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+c
+nvim dist/index.html 
+nvim -U .session 
+nvim -S .session
+nvim /home/apple/nvim/init.lua 
+ls
+cd src
+ls
+touch highLevel.js
+c
+e
+git reflog
+git reset --hard 258f8d0
+npx webpack --watch
+npx webpack
+lazygit
+c
+clear
+git checkout HEAD~100
+git checkout HEAD~99
+git checkout HEAD~87
+clear
+git ref list
+git reflist
+git rev-list
+git show ref
+man git show ref
+git show ref
+git show-ref
+git checkout main~88
+git checkout main~70
+git checkout main~60
+git checkout main~50
+git checkout main~30
+git checkout main~15
+git checkout main~10
+git checkout main~1
+git checkout --list
+git checkout
+man git checkout
+git checkout main
+c
+e
+nvim dist/index.html dist/style.css src/* -S .session
+git ref log
+git reflog
+git reset --hard 6c14c7b
+c
+e
+git reflog
+git reset --hard a10435e
+c
+nvim dist/index.html dist/style.css src/*
+git log
+man git log
+c
+e
+nvim -S .session
+rm .session 
+c
+e
+npx webpack --watch
+killall x
+killall startx
+sudo killall startx
+c
+ps aux | grep startx
+kill 435
+kill 678
+start
+startx
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+c
+nvim -S .session
+c
+nvim /home/apple/nvim/init.lua 
+cd ~/nvim/
+c
+ranger
+nvim dist/index.html dist/style.css src/*
+e
+lazygit
+e
+nvim /home/apple/nvim/init.lua 
+e
+npx webpack --watch
+c
+e
+c
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+c
+nvim dist/index.html dist/style.css src/*
+c
+node
+c
+git status
+git diff
+nvim -S .session
+c
+e
+rm .session 
+c
+e
+lazygit
+npx webpack --watch
+neovim
+cmatrix
+cmatrix | lolcat
+c
+nvim
+htop
+c
+history | grep tui
+nmtui
+xrandr --output eDP-1 --off
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+c
+git push
+lazygit
+e
+qalc
+xrandr --output eDP-1 --off
+neofetch
+qalc
+xrandr --output eDP-1 --off
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+c
+nvim dist/index.html dist/style.css src/*
+nvim /home/apple/i3/config 
+e
+arandr
+man cdparanoia 
+c
+e
+bat ~/.screenlayout/layout.sh 
+nvim /home/apple/i3/config 
+e
+neofetch
+cal 10 2022
+e
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+c
+e
+lslslslsllsls
+kskdjsfahjksdajhfhjsakd
+sdflslkdfjsljfdaaadfksjdfklsdffsdkflksldf skldf jskldf jlsdkf ksldfj ksldf jsldkf j
+kdsfjjjjsdljfklsdfskldsfldsdflskdfl slkdf klsdfkjl slkdf klsdjfllks lkdfk jskldfkl slkjfjlkd ljjlsfdl jljdslkj flklkjf ldskldf lllsjkd kkkds kksfdl  sdd
+c
+history
+c
+nvim -S .session
+npx webpack --watch > /dev/null & disown
+ps aux | grep webpack
+c
+e
+ls
+cd src/
+ls
+rm globalVariables.js 
+ps aux | grep webpack
+kill 4666
+c
+cd ../
+webpack
+npx webpack
+c
+tree
+nvim /home/apple/nvim/init.lua 
+e
+nvim dist/index.html dist/style.css src/*
+nvim -S .session 
+e
+nvim -S .session 
+cd /home/apple/nvim/ 
+ls
+c
+ls
+cd lua/user/
+ls
+touch treesitter-context.lua
+nvim /home/apple/nvim/init.lua 
+e
+lazygit
+nvim -S .session 
+redshift -P -O 3000
+nvim -S .session 
+e
+rm .session 
+e
+lazygit
+e
+qalc
+reset
+qalc
+redshift -P -O 3000
+c
+e
+qalc
+c
+e
+qalc
+nvim /home/apple/i3/config 
+nvim ~/.xinitrc
+setxkbmap -option caps:escape
+c
+xset r rate 150 30
+c
+e
+nvim /home/apple/i3/config 
+e
+qalc
+c
+qalc
+npx webpack --watch
+e
+nvim /home/apple/nvim/init.lua 
+e
+qalc
+htop
+e
+qalc
+htop
+c
+cd /home/apple/Downloads/ 
+ls
+ls *
+rm *
+y
+yy
+c
+kde --share Hubbard\,\ R.\ Glenn_\ O\'Brien\,\ Anthony\ Patrick\ -\ Macroeconomics-Pearson\ \(2019\).pdf 
+xrandr --output eDP-1 --on
+ls .
+ls
+fomr
+c
+setxkbmap -option caps:escape
+xset r rate 150 30
+kdeconnect-cli --refresh &
+jobs
+clear
+nvim /home/apple/i3/config 
+e
+e
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+c
+c
+
+nvim -S .session
+nvim /home/apple/nvim/init.lua 
+nvim dist/index.html dist/style.css src/*
+c
+e
+kde --help
+kde --list-availabe
+kdeconnect-cli --list-
+kdeconnect-cli --list-available
+kdeconnect-cli --refresh
+c
+kdeconnect-cli --list-available
+kde --ring
+c
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+c
+redshift -P -O 3000
+e
+nmtui
+e
+nmcli
+man nmcli-examples
+nmtui
+nmcli
+nmcli wlan0 show
+nmcli device show
+nmcli --help
+nmcli g
+nmcli --show-secrets
+c
+man nmcli
+nmcli wifi
+nmcli radio
+nmcli radio wifi
+nmcli radio wifi --terse
+nmcli radio wifi --terse off
+nmcli radio wifi
+c
+nmcli device wifi list
+man nmcli
+nmcli --ask device wifi connect Spectrum1113 
+npx webpack --watch
+man nmcli-examples
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+c
+kde --help
+kde --share-text https://www.amazon.com/gp/product/B08777KT9P/ref=ewc_pr_img_1?smid=A203G66S7HB9QS&psc=1
+nvim dist/index.html dist/style.css src/*
+e
+lazygit
+e
+npx webpack --watch
+e
+nvim /home/apple/i3/config 
+c
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/src/project.js 
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+man history
+strings
+man strings
+strings 'balls'
+strings balls
+c
+strings src/index.js 
+strings src/index.js | cat
+man cat
+strings src/index.js | cat -V
+cat --help
+strings src/index.js | cat -v
+strings src/index.js | cat -E
+c
+nvim dist/index.html dist/style.css src/*
+nvim /home/apple/nvim/init.lua 
+e
+df
+c
+e
+nvim -S .session 
+nvim -S .test
+ls .*
+ls -A
+rm .session
+nvim src/eventListeners.js 
+ls
+ls -A
+nvim -S .session
+cat .session
+nvim /home/apple/nvim/init.lua 
+nvim -S .session
+ls ~
+ls ~ -A
+c
+e
+nvim -S ~/.vim-session
+nvim ~/.bashrc
+neovim
+source ~/.bashrc
+neovim
+kill %1
+jobs
+c
+ls /tmp/
+cat test
+echo test
+echo test > /tmp/balls
+ls tmp
+ls /tmp/
+c
+man [
+[
+whatis [
+man bash
+e
+man test
+test -f /tmp/neovim && echo its there
+nvim ~/.bashrc
+source ~/.bashrc
+c
+test -f /tmp/neovim && echo its there
+alias
+nvim ~/.bashrc
+test
+source ~/.bashrc
+alias
+alias test=''
+test -f /tmp/neovim && echo its there
+test /tmp/neovim && echo its there
+[ -f /tmp/neovim ] && echo its there
+[ -f /tmp/balls ] && echo its there
+nvim ~/.bashrc
+e
+e
+nvim ~/.bashrc
+c
+cat ~/.bashrc
+cat ~/.bashrc | grep vim
+nvim ~/.bashrc
+nvim -S ~/.vim-session 
+c
+cat bas
+cat ~/.bashrc | grep vim
+cd ~/Personal/
+ls
+cd Temporary/
+ls
+c
+ls ~
+cd ~/do
+cd ~/dotfiles
+ls
+lazygit
+e
+c 
+nvim ~/.bashrc
+nvim -S ~/.vim-session
+neovim
+cd ~/dotfiles
+c
+lazygit
+e
+nvim ~/.bashrc
+test -f
+nvim -S ~/.vim-session 
+neovim
+cd ..
+neovim
+c
+cd ~
+neovim
+c
+neovim
+kill %1
+c
+e
+ls
+c
+neovim
+c
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+c
+nvim dist/index.html dist/style.css src/*
+neovim
+e
+neovim
+shutdownAfter 5
+which shutdown
+which shutdownAfter 
+nvim /usr/bin/shutdownAfter 
+shutdownAfter 3
+c
+e
+npx webpack --watch
+kde --ring
+kdeconnect-cli --refresh &
+kde --ring
+e
+kde --share-text Event Location
+Downtown Clermont Harvest Festival
+West Montrose St. between 7th and 8th street
+Clermont Fl 34711
+Volunteers will meet at the blue Give A Day Foundation tent for your assignment.
+Your contact person will be Otis Taylor,407-864-3303 Outreach and Volunteer Coordinator.
+IMPORTANT
+•This is a (good weather) project. In case of bad weather you will be notified by phone or text
+•Arrive five minutes early with your completed VIP form in hand
+•Signing-up for this project means you are committing to attend
+cat Event Location
+Downtown Clermont Harvest Festival
+West Montrose St. between 7th and 8th street
+Clermont Fl 34711
+Volunteers will meet at the blue Give A Day Foundation tent for your assignment.
+Your contact person will be Otis Taylor,407-864-3303 Outreach and Volunteer Coordinator.
+IMPORTANT
+•This is a (good weather) project. In case of bad weather you will be notified by phone or text
+•Arrive five minutes early with your completed VIP form in hand
+•Signing-up for this project means you are committing to attend
+kde --share-text 'Event Location
+Downtown Clermont Harvest Festival
+
+West Montrose St. between 7th and 8th street
+
+Clermont Fl 34711
+
+
+
+Volunteers will meet at the blue Give A Day Foundation tent for your assignment.
+
+
+
+Your contact person will be Otis Taylor,407-864-3303 Outreach and Volunteer Coordinator.
+
+
+
+IMPORTANT
+
+•This is a (good weather) project. In case of bad weather you will be notified by phone or text
+
+•Arrive five minutes early with your completed VIP form in hand
+
+•Signing-up for this project means you are committing to attend
+
+'
+nvim /home/apple/i3/config 
+c
+which feh
+c
+feh --bg-fill ~/Desktop/wallpaper.jpeg 
+c
+ls
+cd ~/Desktop/
+ls
+c
+ls
+mv wallpaper.jpeg ~/Personal/Documents/wallpaper.jpeg
+c
+cd ../
+cd ..
+cd -
+ls
+cd apple/
+ls
+c
+nvim /home/apple/i3/config 
+c
+e
+nvim /home/apple/i3/config 
+e
+df
+c
+nvim /home/apple/i3/config 
+nvim ~/.bashrc
+e
+e
+redshift -P -O 3000
+c
+e
+neofetch
+c
+e
+setxkbmap -option caps:escape
+xset r rate 150 30
+c
+e
+nvim /home/apple/i3/config 
+c
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+c
+npx webpack --watch
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+c
+lazygit
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+cat ~/Personal/Temporary/currentwd 
+cd ..
+cat ~/Personal/Temporary/currentwd 
+nvim /home/apple/i3/config 
+c
+e
+cd -
+c
+cd /home/apple/dotfiles/ 
+c
+ls
+lazygit
+e
+node
+c
+e
+cd /home/apple/Personal/Programming/The_Odin_Project/TODO-list/ 
+c
+ls
+cd src/
+ls
+mv debug.js putCodeUsedToDebugHere.js
+c
+qalc
+c
+qalc
+c
+e
+qalc
+e
+qalc
+e
+neovim
+ls
+sudo mount /dev/sda /mnt/black/
+ls /mnt/black/
+c
+sudo umount /dev/sda
+ls /mnt/black/
+cd /mnt/
+ls
+cd /bl
+cd black/
+ls
+ls -A
+c
+df
+c
+lsblk
+sudo cat ~/Downloads/archlinux-2022.10.01-x86_64.iso > /dev/sda
+sudo cp  ~/Downloads/archlinux-2022.10.01-x86_64.iso > /dev/sda
+sudo cp  ~/Downloads/archlinux-2022.10.01-x86_64.iso > /dev/sdasdd
+ls /dev/sda
+whatis /dev/sda
+whatis asdfasdf
+c
+whatis whatis
+c
+ls
+c
+cd ../
+cd ~
+sudo cp  ~/Downloads/archlinux-2022.10.01-x86_64.iso > /dev/sdasdd
+sudo cp  ~/Downloads/archlinux-2022.10.01-x86_64.iso > /dev/sda
+sudo umount /dev/sda
+mount /dev/sda /mnt/black/
+sudo mount /dev/sda /mnt/black/
+ls /mnt/black/
+ls
+c
+lsblk
+sudo cp  ~/Downloads/archlinux-2022.10.01-x86_64.iso > /dev/sdb
+sudo
+man sudo
+sudo cp  ~/Downloads/archlinux-2022.10.01-x86_64.iso > /dev/sdb
+sudo cp  ~/Downloads/archlinux-2022.10.01-x86_64.iso > /asdf asdf 
+sudo cp  ~/Downloads/archlinux-2022.10.01-x86_64.iso > /dev/sdb
+sudo cp  ~/Downloads/archlinux-2022.10.01-x86_64.iso > /dev/sdb1
+wipefs --all /dev/sda
+wipefs --all /dev/sdb
+sudo wipefs --all /dev/sdb
+sudo cp  ~/Downloads/archlinux-2022.10.01-x86_64.iso > /dev/sdb1
+sudo cp  ~/Downloads/archlinux-2022.10.01-x86_64.iso > /dev/sdb
+sudo -i
+c
+e
+sudo -i
+c
+cd /home/apple/dotfiles/ 
+c
+ls
+ls -A
+nvim ~/.config/dunst/dunstrc 
+man dunst
+c
+e
+nvim /home/apple/i3/config 
+lazygit
+ln -P ~/.config/dunst/dunstrc ./dunstrc
+ls
+lazygit
+c
+lazygit
+c
+cd /home/apple/nvim/ 
+ls
+c
+lazygit
+pacman -Qe
+pacman -Qe | nvim
+clear
+ls
+cd ../
+ls
+nvim ~/.xinitrc
+ls
+c
+e
+ls
+ls -A
+ls -A | grep bash
+cat .bash_history
+c
