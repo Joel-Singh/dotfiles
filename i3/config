@@ -230,7 +230,7 @@ exec kdeconnect-cli --refresh &
 # Need to sleep min otherwise, switch to workspace 1 -> min starts but doesn't 
 # set itself to a workspace -> by  the time its ready to put itself on to the
 # screen, another workspace switch has occurred"
-# exec dunst --startup_notification true
+exec --no-startup-id dunst --startup_notification false
 exec redshift -P -O 3000
 bindsym $mod+c exec "dunstctl close"
 bindsym $mod+Shift+c exec "dunstctl history-pop"
