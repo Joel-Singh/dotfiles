@@ -95,38 +95,4 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd -t d . $HOME"
 export PATH=/home/apple/.local/bin:$PATH
 
-# PS0="echo run; xdotool getactivewindow set_window --name $BASH_COMMAND"
-# trap 'echo -ne "\e]0;$BASH_COMMAND\007"' DEBUG
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-notebook() {
-    __conda_setup="$('/home/apple/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-    if [ $? -eq 0 ]; then
-        eval "$__conda_setup"
-    else
-        if [ -f "/home/apple/anaconda3/etc/profile.d/conda.sh" ]; then
-            . "/home/apple/anaconda3/etc/profile.d/conda.sh"
-        else
-            export PATH="/home/apple/anaconda3/bin:$PATH"
-        fi
-    fi
-    unset __conda_setup
-
-    jupyter notebook "$@"
-}
-
-conda_setup() {
-    __conda_setup="$('/home/apple/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-    if [ $? -eq 0 ]; then
-        eval "$__conda_setup"
-    else
-        if [ -f "/home/apple/anaconda3/etc/profile.d/conda.sh" ]; then
-            . "/home/apple/anaconda3/etc/profile.d/conda.sh"
-        else
-            export PATH="/home/apple/anaconda3/bin:$PATH"
-        fi
-    fi
-    unset __conda_setup
-}
 fd --max-depth=1 --color never | column
