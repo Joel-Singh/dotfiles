@@ -1,7 +1,0 @@
-#!/usr/bin/bash
-SECONDS=$(($1*1000))
-while [ $(getIdleTime) -le $SECONDS ]
-do
-  sleep 100
-done
-shutdown 0

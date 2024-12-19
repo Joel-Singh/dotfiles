@@ -1,2 +1,0 @@
-#!/usr/bin/bash
-notify-send battery $(cat /sys/class/power_supply/BAT1/capacity)
