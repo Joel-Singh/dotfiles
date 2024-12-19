@@ -195,8 +195,6 @@ bar {
 }
 
 
-# Monitor Configuration
-exec --no-startup-id ~/.screenlayout/monitor_setup.sh
 workspace 1 output HDMI-1
 workspace 2 output eDP-1
 
