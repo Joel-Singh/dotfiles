@@ -1,0 +1,1 @@
+redshift i3-wm kitty x11 xorg-xset xorg-setxkbmap fzf xorg-xinit fd brightnessctl dmenu dunst picom feh
