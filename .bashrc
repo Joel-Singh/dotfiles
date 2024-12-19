@@ -65,8 +65,6 @@ function cd() {
     fd --max-depth=1 --color never | column
 }
 
-# alias cat="bat"
-alias addrt="trello add-card --boardName 'Working Tasks Board' -l 'Random Thoughts'"
 # Set vim mode
 set -o vi
 bind 'set show-mode-in-prompt on'
