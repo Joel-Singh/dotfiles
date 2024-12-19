@@ -205,9 +205,6 @@ exec setxkbmap -option caps:escape
 # xset r rate delay rate
 exec xset r rate 150 30
 
-# Need to sleep min otherwise, switch to workspace 1 -> min starts but doesn't
-# set itself to a workspace -> by  the time its ready to put itself on to the
-# screen, another workspace switch has occurred"
 exec --no-startup-id "dunst -conf ~/.config/dunst/dunstrc"
 bindsym $mod+c exec "dunstctl close"
 bindsym $mod+Shift+c exec "dunstctl history-pop"
