@@ -205,7 +205,7 @@ exec setxkbmap -option caps:escape
 # xset r rate delay rate
 exec xset r rate 150 30
 
-exec --no-startup-id "dunst -conf ~/.config/dunst/dunstrc"
+exec --no-startup-id "dunstctl reload ~/dotfiles/dunstrc"
 bindsym $mod+c exec "dunstctl close"
 bindsym $mod+Shift+c exec "dunstctl history-pop"
 
@@ -217,7 +217,7 @@ bindsym $mod+g exec i3-msg 'bar hidden_state toggle'
 
 exec brightnessctl set 30%
 exec redshift -P -O 3000
-exec picom -b --config ~/i3/picom.conf
+exec picom -b --config ~/dotfiles/i3/picom.conf
 exec feh --bg-scale ~/dotfiles/hotdog-wallpaper.jpg
 exec ~/.screenlayout/dual_monitor_if_connected.sh
 exec min-browser
