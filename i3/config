@@ -205,7 +205,6 @@ exec setxkbmap -option caps:escape
 # xset r rate delay rate
 exec xset r rate 150 30
 
-exec --no-startup-id "dunstctl reload ~/dotfiles/dunstrc"
 bindsym $mod+c exec "dunstctl close"
 bindsym $mod+Shift+c exec "dunstctl history-pop"
 
@@ -221,3 +220,4 @@ exec picom -b --config ~/dotfiles/i3/picom.conf
 exec feh --bg-scale ~/dotfiles/hotdog-wallpaper.jpg
 exec ~/.screenlayout/dual_monitor_if_connected.sh
 exec min-browser
+exec ~/dotfiles/load-dunst-settings.sh
