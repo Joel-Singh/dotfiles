@@ -1,1 +1,4 @@
-redshift i3-wm kitty x11 xorg-xset xorg-setxkbmap fzf xorg-xinit fd brightnessctl dmenu dunst picom feh
+redshift i3-wm kitty xorg-server fzf fd brightnessctl dmenu dunst picom feh base-devel vim man kitty git github-cli bat
+
+# For notify-send
+libnotify
