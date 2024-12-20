@@ -209,9 +209,9 @@ exec --no-startup-id "dunst -conf ~/.config/dunst/dunstrc"
 bindsym $mod+c exec "dunstctl close"
 bindsym $mod+Shift+c exec "dunstctl history-pop"
 exec i3-msg 'workspace 1; exec min'
-bindsym $mod+b exec "battery"
 
-bindsym $mod+t exec notify-send date "$(date)"
+bindsym $mod+b exec "notify-send Battery $(cat /sys/class/power_supply/BAT1/capacity)"
+bindsym $mod+t exec notify-send Time "$(date)"
 
 
 bindsym $mod+g exec i3-msg 'bar hidden_state toggle'

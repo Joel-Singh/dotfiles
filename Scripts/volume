@@ -1,2 +1,0 @@
-#!/usr/bin/bash
-notify-send -r 823 -t 500 volume $(pamixer --get-volume)
