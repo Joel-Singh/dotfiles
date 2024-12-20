@@ -210,7 +210,7 @@ bindsym $mod+c exec "dunstctl close"
 bindsym $mod+Shift+c exec "dunstctl history-pop"
 exec i3-msg 'workspace 1; exec min'
 
-bindsym $mod+b exec "notify-send Battery $(cat /sys/class/power_supply/BAT1/capacity)"
+bindsym $mod+b exec "notify-send Battery $(cat /sys/class/power_supply/BAT0/capacity)"
 bindsym $mod+t exec notify-send Time "$(date)"
 
 
