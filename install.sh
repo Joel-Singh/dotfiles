@@ -22,5 +22,7 @@ link ./dunstrc ~/.config/dunst/dunstrc
 rm ~/i3/picom.conf
 link ./i3/picom.conf ~/i3/picom.conf
 
+link ./.gitconfig ~/.gitconfig
+
 mkdir ~/Personal/Temporary
 touch ~/Personal/Temporary/currentwd
