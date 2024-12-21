@@ -1,4 +1,4 @@
-redshift i3-wm kitty xorg-server fzf fd brightnessctl dmenu dunst picom feh base-devel vim man kitty git github-cli bat
+redshift i3-wm kitty xorg-server fzf fd brightnessctl dmenu dunst picom feh base-devel vim man kitty git github-cli bat htop logseq neofetch 
 
 # For notify-send
 libnotify
