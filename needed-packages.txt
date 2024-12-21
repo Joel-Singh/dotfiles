@@ -5,3 +5,4 @@ libnotify
 
 # For neovim
 luarocks
+xclip # For clipboard support
