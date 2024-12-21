@@ -6,7 +6,7 @@
 export PIP_REQUIRE_VIRTUALENV=true
 export VISUAL="nvim"
 export EDITOR="nvim"
-MANPAGER="nvim +Man!"
+export MANPAGER="nvim +Man!"
 
 # Added default
 # If not running interactively, don't do anything
