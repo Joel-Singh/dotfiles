@@ -26,3 +26,7 @@ link ./.gitconfig ~/.gitconfig
 
 mkdir ~/Personal/Temporary
 touch ~/Personal/Temporary/currentwd
+
+mkdir ~/lazygit
+rm ./lazygit/config.yml
+link ./lazygit/config.yml ~/lazygit/config.yml
