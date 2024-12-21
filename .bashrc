@@ -35,7 +35,7 @@ alias feh='feh --scale-down'
 alias kcli='kdeconnect-cli'
 alias c='clear; fd --max-depth=1 --color never | column'
 alias xterm='xterm & disown'
-alias df='echo "Filesystem      Size  Used   Avai Use% Mounted on" && df --human-readable | grep sda2'
+alias df='echo "Filesystem      Size  Used   Avai Use% Mounted on" && df --human-readable | grep nvme0n1p2'
 alias e="exit"
 alias lg="lazygit"
 alias cr="cargo run"
