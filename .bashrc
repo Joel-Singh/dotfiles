@@ -46,15 +46,6 @@ alias snapshot="git add .;  git commit -m \"Snapshot \"; git push;"
 alias cq5="pandoc --from markdown --to pdf quiz-5.md > quiz-5.pdf && z quiz-5.pdf"
 alias ghcs="gh copilot suggest"
 
-function neovim() {
-  while true; do
-    nvim --listen /tmp/nvimsocket -S ~/.vim-session
-    if [ -f /tmp/vim-close ]; then
-      break
-    fi
-  done
-}
-
 function z() {
   nohup zathura "$@" >/dev/null & disown & e
 }
