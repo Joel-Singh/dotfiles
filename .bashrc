@@ -57,6 +57,27 @@ function cd() {
     fd --max-depth=1 --color never | column
 }
 
+function y-S() {
+  if [[ -z $1 ]]; then
+    echo "Usage: y-S <package>"
+    return
+  fi
+
+  pkg=$(yay -Ss $1 | awk '/^[a-z]/ {print $1}' | fzf -q ${1})
+  if [[ -n $pkg ]]; then
+    yay -S $pkg
+  fi
+}
+
+function p-R() {
+  pkg=$(pacman -Qq | fzf -q ${1:-""})
+  if [[ -n "$pkg" ]]; then
+    sudo pacman -Rs "$pkg"
+  else
+    echo "No package selected."
+  fi
+}
+
 # Set vim mode
 set -o vi
 bind 'set show-mode-in-prompt on'
