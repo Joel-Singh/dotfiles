@@ -22,7 +22,7 @@ PS1='[\u@\h \W]\$\'
 # Customizing Bash prompt
 GREEN="\[$(tput setaf 2)\]"
 RESET="\[$(tput sgr0)\]"
-PS1="${GREEN} \W${RESET} "
+PS1="${GREEN}\W${RESET} "
 
 # Aliases
 alias l='ls --color=auto'
