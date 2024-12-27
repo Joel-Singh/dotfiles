@@ -78,9 +78,6 @@ function p-R() {
   fi
 }
 
-# Set vim mode
-set -o vi
-bind 'set show-mode-in-prompt on'
 set keyseq-timeout 25
 # History Settings
 HISTFILESIZE=1000000
