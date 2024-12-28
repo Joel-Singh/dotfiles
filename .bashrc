@@ -48,6 +48,7 @@ alias cq5="pandoc --from markdown --to pdf quiz-5.md > quiz-5.pdf && z quiz-5.pd
 alias ghcs="gh copilot suggest"
 alias ghrepolist="gh repo list -L 99"
 alias keymaps="bind -P | awk '/can be found/ {print \$0}' | fzf"
+alias alias="alias | fzf"
 
 function z() {
   nohup zathura "$@" >/dev/null & disown & e
