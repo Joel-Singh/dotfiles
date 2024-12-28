@@ -81,6 +81,15 @@ function p-R() {
   fi
 }
 
+function clone() {
+  repo=$(gh repo list -L 99 | awk '/Joel-Singh/ {print $1}' | fzf)
+  if [[ -n "$repo" ]]; then
+    gh repo clone $repo
+  else
+    echo "No repo selected."
+  fi
+}
+
 set keyseq-timeout 25
 # History Settings
 HISTFILESIZE=1000000
