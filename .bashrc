@@ -72,6 +72,18 @@ function y-S() {
   fi
 }
 
+function p-S() {
+  if [[ -z $1 ]]; then
+    echo "Usage: p-S <package>"
+    return
+  fi
+
+  pkg=$(yay -Ss $1 | awk '/^[a-z]/ {print $1}' | fzf -q ${1})
+  if [[ -n $pkg ]]; then
+    sudo pacman -S $pkg
+  fi
+}
+
 function p-R() {
   pkg=$(pacman -Qq | fzf -q ${1:-""})
   if [[ -n "$pkg" ]]; then
