@@ -54,6 +54,10 @@ function z() {
   nohup zathura "$@" >/dev/null & disown & e
 }
 
+function launch_gnucash() {
+  nohup gnucash ~/Personal/gnucash/myMainMoneyFile.gnucash > /dev/null & disown & e
+}
+
 function cd() {
     builtin cd "$@"
     clear
