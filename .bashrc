@@ -12,13 +12,6 @@ export MANPAGER="nvim +Man!"
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# Added default
-PS1='[\u@\h \W]\$\'
-
-
-# Custom stuff down here
-
-
 # Customizing Bash prompt
 GREEN="\[$(tput setaf 2)\]"
 RESET="\[$(tput sgr0)\]"
