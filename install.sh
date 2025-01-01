@@ -32,3 +32,5 @@ rm ./lazygit/config.yml
 link ./lazygit/config.yml ~/lazygit/config.yml
 
 link ./kitty.conf ~/kitty/kitty.conf
+
+link ./hyprland.conf ~/hypr/hyprland.conf
