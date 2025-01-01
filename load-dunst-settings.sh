@@ -1,1 +1,0 @@
-dunstctl reload dunstrc
