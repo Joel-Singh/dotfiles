@@ -83,7 +83,7 @@ function p-S() {
     return
   fi
 
-  pkg=$(yay -Ss $1 | awk '/^[a-z]/ {print $1}' | fzf -q ${1})
+  pkg=$(yay -Ss $1 | awk '/^[a-z]/ {print $1}' | awk '!/^aur/' | fzf -q ${1})
   if [[ -n $pkg ]]; then
     sudo pacman -S $pkg
   fi
