@@ -55,6 +55,12 @@ function launch_gnucash() {
   nohup gnucash ~/Personal/gnucash/myMainMoneyFile.gnucash > /dev/null & disown & e
 }
 
+function nvim() {
+  kitten @ set-spacing padding=0
+  command nvim $@
+  kitten @ set-spacing padding=10
+}
+
 function cd() {
     builtin cd "$@"
     clear
