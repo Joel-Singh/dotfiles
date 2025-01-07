@@ -57,7 +57,7 @@ function launch_gnucash() {
 
 function nvim() {
   kitten @ set-spacing padding=0
-  command nvim $@
+  command nvim "$@"
   kitten @ set-spacing padding=10
 }
 
