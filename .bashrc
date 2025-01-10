@@ -110,6 +110,17 @@ function clone() {
   fi
 }
 
+function n() {
+  files="/home/apple/dotfiles/.bashrc
+/home/apple/dotfiles/hyprland.conf
+/home/apple/nvim/init.lua
+/home/apple/Personal/note-graphs/Guiding-Principles/home/Deliberate new goals.md
+/home/apple/Personal/note-graphs/Guiding-Principles/home/Long term goals.md"
+
+  selected=$(echo -e "$files" | fzf)
+  nvim "$selected"
+}
+
 set keyseq-timeout 25
 # History Settings
 HISTFILESIZE=1000000
