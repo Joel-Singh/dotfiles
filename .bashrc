@@ -44,6 +44,7 @@ alias ghcs="gh copilot suggest"
 alias ghrepolist="gh repo list -L 99"
 alias keymaps="bind -P | awk '/can be found/ {print \$0}' | fzf"
 alias cal="cal -3"
+alias n_graph='nvim "$(fd . /home/apple/Personal/note-graphs/Guiding-Principles/ | fzf)"'
 
 # Keep at the bottom of aliases or else it breaks other aliases
 alias alias="alias | fzf"
@@ -113,6 +114,7 @@ function clone() {
 function n() {
   files="/home/apple/dotfiles/.bashrc
 /home/apple/dotfiles/hyprland.conf
+/home/apple/dotfiles/.bash_profile
 /home/apple/nvim/init.lua
 /home/apple/Personal/note-graphs/Guiding-Principles/home/Deliberate new goals.md
 /home/apple/Personal/note-graphs/Guiding-Principles/home/Long term goals.md"
