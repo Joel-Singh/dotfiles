@@ -44,7 +44,7 @@ alias ghcs="gh copilot suggest"
 alias ghrepolist="gh repo list -L 99"
 alias keymaps="bind -P | awk '/can be found/ {print \$0}' | fzf"
 alias cal="cal -3"
-alias n_graph='nvim "$(fd . /home/apple/Personal/note-graphs/Guiding-Principles/ | fzf)"'
+alias n-graph='nvim "$(fd . /home/apple/Personal/note-graphs/Guiding-Principles/ | fzf)"'
 
 # Keep at the bottom of aliases or else it breaks other aliases
 alias alias="alias | fzf"
