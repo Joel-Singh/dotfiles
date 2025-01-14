@@ -120,7 +120,9 @@ function n() {
 /home/apple/Personal/note-graphs/Guiding-Principles/home/Long term goals.md"
 
   selected=$(echo -e "$files" | fzf)
-  nvim "$selected"
+  if [[ -n $selected ]]; then
+    nvim "$selected"
+  fi 
 }
 
 set keyseq-timeout 25
