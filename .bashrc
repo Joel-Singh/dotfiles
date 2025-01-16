@@ -59,7 +59,11 @@ function launch_gnucash() {
 
 function nvim() {
   kitten @ set-spacing padding=0
-  command nvim "$@"
+  if [[ -n $@ ]]; then 
+    command nvim "$@"
+  else
+    command nvim -S ~/nvim/Session.vim
+  fi
   kitten @ set-spacing padding=10
 }
 
