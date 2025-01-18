@@ -119,8 +119,8 @@ function n() {
 /home/apple/dotfiles/hyprland.conf
 /home/apple/dotfiles/.bash_profile
 /home/apple/nvim/init.lua
-/home/apple/Personal/note-graphs/Guiding-Principles/home/Deliberate new goals.md
-/home/apple/Personal/note-graphs/Guiding-Principles/home/Long term goals.md"
+/home/apple/Personal/note-graphs/Guiding-Principles/home/how-one-ought-to-be/Deliberate new goals.md
+/home/apple/Personal/note-graphs/Guiding-Principles/home/how-one-ought-to-be/Long term goals.md"
 
   selected=$(echo -e "$files" | fzf)
   if [[ -n $selected ]]; then
