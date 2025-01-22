@@ -56,14 +56,15 @@ function launch_gnucash() {
   nohup gnucash ~/Personal/gnucash/myMainMoneyFile.gnucash > /dev/null & disown & e
 }
 
+kitten @ set-spacing padding=5
 function nvim() {
-  kitten @ set-spacing padding=0
+  kitten @ set-spacing padding=5
   if [[ -n $@ ]]; then 
     command nvim "$@"
   else
     command nvim -S ~/nvim/Session.vim
   fi
-  kitten @ set-spacing padding=10
+  kitten @ set-spacing padding=5
 }
 
 function cd() {
