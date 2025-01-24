@@ -4,3 +4,5 @@ spotify
 go
 Trash
 Logseq
+!*.pdf
+!*.epub
