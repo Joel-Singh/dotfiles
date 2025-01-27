@@ -42,7 +42,8 @@ alias cq5="pandoc --from markdown --to pdf quiz-5.md > quiz-5.pdf && z quiz-5.pd
 alias ghcs="gh copilot suggest"
 alias ghrepolist="gh repo list -L 99"
 alias keymaps="bind -P | awk '/can be found/ {print \$0}' | fzf"
-alias cal="cal -3"
+alias cal3="cal -3"
+alias calyear="cal --year"
 alias n-graph='nvim "$(fd . /home/apple/Personal/note-graphs/Guiding-Principles/ | fzf)"'
 
 # Keep at the bottom of aliases or else it breaks other aliases
