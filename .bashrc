@@ -119,6 +119,10 @@ function clone() {
   fi
 }
 
+function toPdf() {
+  pandoc "$1" -o "${1%.*}.pdf"
+}
+
 function n() {
   files="/home/apple/dotfiles/.bashrc
 /home/apple/dotfiles/hyprland.conf
