@@ -123,6 +123,10 @@ function toPdf() {
   pandoc "$1" -o "${1%.*}.pdf"
 }
 
+function toMd() {
+  pandoc "$1" -o "${1%.*}.md"
+}
+
 function n() {
   files="/home/apple/dotfiles/.bashrc
 /home/apple/dotfiles/hyprland.conf
