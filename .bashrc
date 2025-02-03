@@ -124,6 +124,10 @@ function toMd() {
   pandoc "$1" -o "${1%.*}.md"
 }
 
+function runC++() {
+  ls *.cpp | entr -c sh -c "g++ $1 -o ${1%.*} && ./${1%.*}"
+}
+
 function n() {
   files="/home/apple/dotfiles/.bashrc
 /home/apple/dotfiles/hyprland.conf
