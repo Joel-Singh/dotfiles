@@ -47,9 +47,6 @@ alias cal3="cal -3"
 alias calyear="cal --year"
 alias n-graph='nvim "$(fd . /home/apple/Personal/note-graphs/Guiding-Principles/ | fzf)"'
 
-# Keep at the bottom of aliases or else it breaks other aliases
-alias alias="alias | fzf"
-
 function z() {
   nohup zathura "$@" >/dev/null & disown & e
 }
