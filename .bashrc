@@ -146,6 +146,8 @@ function n() {
   fi 
 }
 
+ bind '"\t":menu-complete'
+
 set keyseq-timeout 25
 # History Settings
 HISTFILESIZE=1000000
