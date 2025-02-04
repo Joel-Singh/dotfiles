@@ -128,6 +128,10 @@ function runC++() {
   ls *.cpp | entr -c sh -c "g++ $1 -o ${1%.*} && ./${1%.*}"
 }
 
+function timer() {
+  termdown "$1" --no-bell && notify-send "Time's up!"
+}
+
 function n() {
   files="/home/apple/dotfiles/.bashrc
 /home/apple/dotfiles/hyprland.conf
