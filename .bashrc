@@ -129,7 +129,7 @@ function runC++() {
 }
 
 function timer() {
-  termdown "$1" --no-bell && notify-send "Time's up!"
+  termdown "$1" --no-bell && notify-send "Time's up!" $2
 }
 
 function n() {
