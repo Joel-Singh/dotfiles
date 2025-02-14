@@ -129,6 +129,10 @@ function runC++() {
   ls *.cpp | entr -c sh -c "g++ $1 -o ${1%.*} && ./${1%.*}"
 }
 
+function runPython() {
+  ls *.py | entr -c sh -c "python $1"
+}
+
 function timer() {
   termdown "$1" --no-bell && notify-send "Time's up!" $2
 }
