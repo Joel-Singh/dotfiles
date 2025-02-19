@@ -7,15 +7,15 @@ link ./.bashrc ~/.bashrc
 rm ~/.bash_profile
 link ./.bash_profile ~/.bash_profile
 
-mkdir ~/i3
+mkdir -p ~/i3
 rm ~/i3/config
 link ./i3/config ~/i3/config
 
 rm ~/.xinitrc
 link ./.xinitrc ~/.xinitrc
 
-mkdir ~/.config
-mkdir ~/.config/dunst
+mkdir -p ~/.config
+mkdir -p ~/.config/dunst
 rm ~/.config/dunst/dunstrc
 link ./dunstrc ~/.config/dunst/dunstrc
 
@@ -24,10 +24,10 @@ link ./i3/picom.conf ~/i3/picom.conf
 
 link ./.gitconfig ~/.gitconfig
 
-mkdir ~/Personal/Temporary
+mkdir -p ~/Personal/Temporary
 touch ~/Personal/Temporary/currentwd
 
-mkdir ~/lazygit
+mkdir -p ~/lazygit
 rm ./lazygit/config.yml
 link ./lazygit/config.yml ~/lazygit/config.yml
 
