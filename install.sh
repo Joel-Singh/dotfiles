@@ -28,7 +28,7 @@ mkdir -p ~/Personal/Temporary
 touch ~/Personal/Temporary/currentwd
 
 mkdir -p ~/lazygit
-rm ./lazygit/config.yml
+rm ~/lazgit/config.yml
 link ./lazygit/config.yml ~/lazygit/config.yml
 
 link ./kitty.conf ~/kitty/kitty.conf
