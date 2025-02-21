@@ -53,7 +53,7 @@ function z() {
 }
 
 function launch_gnucash() {
-  nohup gnucash ~/Personal/gnucash/myMainMoneyFile.gnucash > /dev/null & disown & e
+  nohup gnucash ~/gnucash/myMainMoneyFile.gnucash > /dev/null & disown & e
 }
 
 if [ -z "$NVIM" ]; then
