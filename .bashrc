@@ -33,8 +33,8 @@ alias e="exit"
 alias lg="lazygit"
 alias cr="cargo run"
 alias shareWithPhone="kdeconnect-cli -n jerry --share"
-alias nbr="nvim ~/dotfiles/.bashrc"
-alias nhc="nvim ~/dotfiles/hyprland.conf"
+alias nbr="nvim ~/Personal/dotfiles/.bashrc"
+alias nhc="nvim ~/Personal/dotfiles/hyprland.conf"
 alias nil="nvim ~/nvim/init.lua"
 alias ns="nvim ~/Personal/Temporary/scratch.txt"
 alias lvim="echo you probably meant nvim"
@@ -45,7 +45,7 @@ alias ghrepolist="gh repo list -L 99"
 alias keymaps="bind -P | awk '/can be found/ {print \$0}' | fzf"
 alias cal3="cal -3"
 alias calyear="cal --year"
-alias n-graph='nvim "$(fd . /home/apple/Personal/note-graphs/Guiding-Principles/ | fzf)"'
+alias n-graph='nvim "$(fd . /home/apple/Personal/Guiding-Principles/ | fzf)"'
 alias pdflatex='pdflatex -output-directory=./output'
 
 function z() {
@@ -138,12 +138,12 @@ function timer() {
 }
 
 function n() {
-  files="/home/apple/dotfiles/.bashrc
-/home/apple/dotfiles/hyprland.conf
-/home/apple/dotfiles/.bash_profile
+  files="/home/apple/Personal/dotfiles/.bashrc
+/home/apple/Personal/dotfiles/hyprland.conf
+/home/apple/Personal/dotfiles/.bash_profile
 /home/apple/nvim/init.lua
-/home/apple/Personal/note-graphs/Guiding-Principles/home/how-one-ought-to-be/Deliberate new goals.md
-/home/apple/Personal/note-graphs/Guiding-Principles/home/how-one-ought-to-be/Long term goals.md"
+/home/apple/Personal/Guiding-Principles/home/how-one-ought-to-be/Deliberate new goals.md
+/home/apple/Personal/Guiding-Principles/home/how-one-ought-to-be/Long term goals.md"
 
   selected=$(echo -e "$files" | fzf)
   if [[ -n $selected ]]; then
