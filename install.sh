@@ -34,3 +34,7 @@ link ./lazygit/config.yml ~/lazygit/config.yml
 link ./kitty.conf ~/kitty/kitty.conf
 
 link ./hyprland.conf ~/hypr/hyprland.conf
+
+mkdir -p ~/.config/hypr/
+rm ~/.config/hypr/hyprpaper.conf
+link ./hyprpaper.conf ~/.config/hypr/hyprpaper.conf
