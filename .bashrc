@@ -129,6 +129,10 @@ function runC++() {
   ls *.cpp | entr -c sh -c "g++ $1 -o ${1%.*} && ./${1%.*}"
 }
 
+function runTestCpp() {
+  ls *.cpp | entr -c sh -c "$1"
+}
+
 function runPython() {
   ls *.py | entr -c sh -c "python $1"
 }
