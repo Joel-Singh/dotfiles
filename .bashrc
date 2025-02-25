@@ -186,6 +186,6 @@ export FZF_DEFAULT_COMMAND="fd . $HOME"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd -t d . $HOME"
 export FZF_COMPLETION_TRIGGER=''
-export PATH=/home/apple/.local/bin:/home/apple/.cargo/bin:$PATH
+export PATH=/home/apple/.local/bin:/home/apple/.cargo/bin:/home/apple/Applications/:$PATH
 
 fd --max-depth=1 --color never | column
