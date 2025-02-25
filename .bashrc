@@ -48,6 +48,8 @@ alias cal3="cal -3"
 alias calyear="cal --year"
 alias n-graph='nvim "$(fd . /home/apple/Personal/Guiding-Principles/ | fzf)"'
 alias pdflatex='pdflatex -output-directory=./output'
+alias neofetch='fastfetch'
+alias ff='fastfetch'
 
 function z() {
   nohup zathura "$@" >/dev/null & disown & e
