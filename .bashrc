@@ -132,7 +132,7 @@ function toMd() {
   pandoc "$1" -o "${1%.*}.md"
 }
 
-function runC++() {
+function runCpp() {
   ls *.cpp | entr -c sh -c "g++ $1 -o ${1%.*} && ./${1%.*}"
 }
 
