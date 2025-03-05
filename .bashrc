@@ -26,7 +26,7 @@ alias rm='rm -i'
 alias kdejerry='kdeconnect-cli -n jerry'
 alias feh='feh --scale-down'
 alias kcli='kdeconnect-cli'
-alias c='clear; fd --max-depth=1 --color never | column'
+alias c="clear && printf '\033[3J'; fd --max-depth=1 --color never | column "
 alias xterm='xterm & disown'
 alias df="df --human-readable | awk 'NR==1 || /sda2/'"
 alias e="exit"
