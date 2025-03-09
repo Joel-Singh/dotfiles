@@ -21,7 +21,6 @@ PS1="${GREEN}\W${RESET} "
 alias l='ls --color=auto'
 alias ls='ls --color=auto'
 alias pacman='pacman --color=auto'
-#alias battery='cat /sys/class/power_supply/BAT1/capacity'
 alias rm='rm -i'
 alias kdejerry='kdeconnect-cli -n jerry'
 alias feh='feh --scale-down'
