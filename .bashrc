@@ -21,7 +21,7 @@ PS1="${GREEN}\W${RESET} "
 alias l='ls --color=auto'
 alias ls='ls --color=auto'
 alias pacman='pacman --color=auto'
-alias rm='rm -i'
+alias rm='echo Use trash silly'
 alias kdejerry='kdeconnect-cli -n jerry'
 alias feh='feh --scale-down'
 alias kcli='kdeconnect-cli'
