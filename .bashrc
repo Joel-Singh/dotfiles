@@ -51,6 +51,7 @@ alias n-graph='nvim "$(fd . /home/apple/Personal/Guiding-Principles/ | fzf)"'
 alias pdflatex='mkdir -p output && pdflatex -output-directory=./output'
 alias neofetch='fastfetch'
 alias ff='fastfetch'
+alias mv="mv -i"
 
 function z() {
   nohup zathura "$@" >/dev/null & disown & e
