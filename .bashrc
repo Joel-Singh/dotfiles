@@ -48,7 +48,7 @@ alias keymaps="bind -P | awk '/can be found/ {print \$0}' | fzf"
 alias cal3="cal -3"
 alias calyear="cal --year"
 alias n-graph='nvim "$(fd . /home/apple/Personal/Guiding-Principles/ | fzf)"'
-alias pdflatex='pdflatex -output-directory=./output'
+alias pdflatex='mkdir -p output && pdflatex -output-directory=./output'
 alias neofetch='fastfetch'
 alias ff='fastfetch'
 
