@@ -51,6 +51,7 @@ alias n-graph='nvim "$(fd . /home/apple/Personal/Guiding-Principles/ | fzf)"'
 alias pdflatex='mkdir -p output && pdflatex -output-directory=./output'
 alias neofetch='fastfetch'
 alias ff='fastfetch'
+alias zcs="z /home/apple/Personal/Denison/spring-2024/CS234/cs234-book.pdf"
 alias mv="mv -i"
 
 function z() {
