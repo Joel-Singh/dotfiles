@@ -54,6 +54,7 @@ alias neofetch='fastfetch'
 alias ff='fastfetch'
 alias zcs="z /home/apple/Personal/Denison/spring-2024/CS234/cs234-book.pdf"
 alias mv="mv -i"
+alias qalc="clear && qalc"
 
 function z() {
   nohup zathura "$@" >/dev/null & disown & e
