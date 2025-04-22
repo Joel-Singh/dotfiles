@@ -56,6 +56,7 @@ alias pdft='mkdir -p output && pdflatex -output-directory=./output'
 alias neofetch='fastfetch'
 alias ff='fastfetch'
 alias zcs="z /home/apple/Personal/Denison/spring-2024/CS234/cs234-book.pdf"
+alias ztn='ls /home/apple/Personal/Denison/spring-2024/MATH145/teacher-notes/ | $(echo z /home/apple/Personal/Denison/spring-2024/MATH145/teacher-notes/$(fzf)) && exit'
 alias mv="mv -i"
 alias qalc="clear && qalc"
 alias cp="cp --update=none-fail"
