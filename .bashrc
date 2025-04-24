@@ -147,6 +147,10 @@ function runCpp() {
   ls *.cpp | entr -c sh -c "g++ $1 -o ${1%.*} && ./${1%.*}"
 }
 
+function runCppMake() {
+  ls *.cpp | entr -c sh -c "make && $1"
+}
+
 function runTestCpp() {
   ls *.cpp | entr -c sh -c "$1"
 }
