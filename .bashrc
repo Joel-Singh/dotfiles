@@ -32,6 +32,7 @@ alias xterm='xterm & disown'
 alias df="df --human-readable | awk 'NR==1 || /sda2/'"
 alias e="exit"
 alias lg="lazygit"
+alias gd="git diff"
 alias cr="cargo run"
 alias cf="cargo fmt"
 alias cc="cargo clippy --fix"
