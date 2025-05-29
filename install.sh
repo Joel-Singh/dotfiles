@@ -7,10 +7,6 @@ link ./.bashrc ~/.bashrc
 rm ~/.bash_profile
 link ./.bash_profile ~/.bash_profile
 
-mkdir -p ~/i3
-rm ~/i3/config
-link ./i3/config ~/i3/config
-
 rm ~/.xinitrc
 link ./.xinitrc ~/.xinitrc
 
