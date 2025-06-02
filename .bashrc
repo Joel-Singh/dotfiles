@@ -8,6 +8,7 @@ export VISUAL="nvim"
 export EDITOR="nvim"
 export MANPAGER="nvim +Man!"
 export JOELS_COMPUTER="true" # Used for DuckSlayer
+export DUCKSLAYER_DEBUG="true"
 
 # Added default
 # If not running interactively, don't do anything
